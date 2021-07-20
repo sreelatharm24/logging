@@ -1,0 +1,9 @@
+server: port: 9092
+spring:
+   kafka:
+     consumer:
+        bootstrap-servers: 143.244.136.200:9092
+        group-id: root_kafka-2_1
+        auto-offset-reset: earliest
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
